@@ -1,0 +1,8 @@
+[submodule "vscode"]
+	path = vscode
+	url = https://github.com/Lucky-Rathore/niwala-vscode.git
+	branch = niwala
+[submodule "opencode"]
+	path = opencode
+	url = https://github.com/Lucky-Rathore/niwala-opencode.git
+	branch = niwala
