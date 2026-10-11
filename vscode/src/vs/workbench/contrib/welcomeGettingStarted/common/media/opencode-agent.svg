@@ -1,0 +1,38 @@
+<svg viewBox="0 0 410 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="10" y="24" width="390" height="318" rx="6" fill="var(--vscode-editor-background, #1e1e1e)"/>
+<rect x="10" y="24" width="390" height="30" rx="6" fill="var(--vscode-editorGroupHeader-tabsBackground, #252526)"/>
+<rect x="10" y="24" width="110" height="30" fill="var(--vscode-tab-activeBackground, #1e1e1e)"/>
+<rect x="22" y="36" width="70" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.35"/>
+<rect x="24" y="72" width="60" height="6" rx="3" fill="#2E6CD1"/>
+<rect x="90" y="72" width="80" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.25"/>
+<rect x="38" y="90" width="44" height="6" rx="3" fill="#E0B976"/>
+<rect x="88" y="90" width="96" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.25"/>
+<rect x="38" y="108" width="120" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.25"/>
+<rect x="30" y="124" width="170" height="16" fill="#2E6CD1" fill-opacity="0.18"/>
+<rect x="38" y="129" width="140" height="6" rx="3" fill="#2E6CD1"/>
+<rect x="38" y="148" width="74" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.25"/>
+<rect x="24" y="166" width="20" height="6" rx="3" fill="#2E6CD1"/>
+<rect x="24" y="196" width="60" height="6" rx="3" fill="#2E6CD1"/>
+<rect x="90" y="196" width="56" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.25"/>
+<rect x="38" y="214" width="110" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.25"/>
+<rect x="38" y="232" width="84" height="6" rx="3" fill="#E0B976"/>
+<rect x="24" y="250" width="20" height="6" rx="3" fill="#2E6CD1"/>
+<rect x="222" y="54" width="178" height="288" fill="var(--vscode-sideBar-background, #252526)"/>
+<rect x="222" y="54" width="1" height="288" fill="var(--vscode-foreground)" fill-opacity="0.12"/>
+<g transform="translate(236 66) scale(0.028)"><rect width="1000" height="1000" rx="218" fill="#232D62"/><g fill="none" stroke="#2E6CD1" stroke-width="76" stroke-linecap="round" stroke-linejoin="round"><polyline points="399,288 189,500 399,712"/><polyline points="601,288 811,500 601,712"/></g><circle cx="500" cy="500" r="125" fill="#E0B976"/></g>
+<rect x="272" y="74" width="54" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.45"/>
+<rect x="296" y="102" width="92" height="30" rx="8" fill="#2E6CD1" fill-opacity="0.9"/>
+<rect x="306" y="110" width="66" height="5" rx="2.5" fill="#FFFFFF" fill-opacity="0.85"/>
+<rect x="306" y="120" width="44" height="5" rx="2.5" fill="#FFFFFF" fill-opacity="0.85"/>
+<rect x="234" y="144" width="140" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.3"/>
+<rect x="234" y="158" width="118" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.3"/>
+<rect x="234" y="176" width="154" height="44" rx="6" fill="var(--vscode-editor-background, #1e1e1e)"/>
+<rect x="244" y="186" width="8" height="6" rx="3" fill="#E0B976"/>
+<rect x="258" y="186" width="72" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.35"/>
+<rect x="244" y="202" width="8" height="6" rx="3" fill="#2E6CD1"/>
+<rect x="258" y="202" width="98" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.35"/>
+<rect x="234" y="232" width="126" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.3"/>
+<rect x="234" y="296" width="154" height="32" rx="6" fill="var(--vscode-input-background, #3c3c3c)" stroke="#2E6CD1" stroke-opacity="0.7"/>
+<rect x="246" y="309" width="80" height="6" rx="3" fill="var(--vscode-foreground)" fill-opacity="0.3"/>
+<circle cx="372" cy="312" r="8" fill="#E0B976"/>
+</svg>

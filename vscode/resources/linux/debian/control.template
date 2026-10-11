@@ -1,0 +1,15 @@
+Package: @@NAME@@
+Version: @@VERSION@@
+Section: devel
+Depends: @@DEPENDS@@
+Recommends: @@RECOMMENDS@@
+Priority: optional
+Architecture: @@ARCHITECTURE@@
+Maintainer: Niwala <luckyrathore03@gmail.com>
+Installed-Size: @@INSTALLEDSIZE@@
+Provides: visual-studio-@@NAME@@
+Conflicts: visual-studio-@@NAME@@
+Replaces: visual-studio-@@NAME@@
+Description: The code editor with an AI agent built in.
+ Niwala is a code editor based on Code - OSS with Agent Chat, an AI coding
+ agent powered by opencode, built in.

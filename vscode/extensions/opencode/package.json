@@ -1,0 +1,162 @@
+{
+  "name": "opencode",
+  "displayName": "Agent Chat",
+  "description": "AI coding agent built into Niwala.",
+  "version": "10.0.0",
+  "publisher": "niwala",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "main": "./out/extension",
+  "categories": [
+    "AI"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "capabilities": {
+    "virtualWorkspaces": false,
+    "untrustedWorkspaces": {
+      "supported": "limited",
+      "description": "Agent Chat can run commands and edit files, so it only starts in trusted folders."
+    }
+  },
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "opencode",
+          "title": "Agent Chat",
+          "icon": "media/opencode.svg"
+        }
+      ]
+    },
+    "views": {
+      "opencode": [
+        {
+          "type": "webview",
+          "id": "opencode.view",
+          "name": "Agent Chat"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "opencode.newSession",
+        "title": "New Chat",
+        "category": "Agent Chat",
+        "icon": "$(add)"
+      },
+      {
+        "command": "opencode.addSelection",
+        "title": "Add Selection to Agent Chat",
+        "category": "Agent Chat"
+      },
+      {
+        "command": "opencode.addFile",
+        "title": "Add File to Agent Chat",
+        "category": "Agent Chat"
+      },
+      {
+        "command": "opencode.openInEditor",
+        "title": "Open Advanced View",
+        "category": "Agent Chat",
+        "icon": "$(link-external)"
+      },
+      {
+        "command": "opencode.restart",
+        "title": "Restart Server",
+        "category": "Agent Chat",
+        "icon": "$(debug-restart)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "opencode.newSession",
+          "when": "view == opencode.view",
+          "group": "navigation@1"
+        },
+        {
+          "command": "opencode.openInEditor",
+          "when": "view == opencode.view",
+          "group": "navigation@2"
+        },
+        {
+          "command": "opencode.restart",
+          "when": "view == opencode.view",
+          "group": "overflow"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "opencode.addSelection",
+          "when": "resourceScheme == file",
+          "group": "agentChat@1"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "opencode.addFile",
+          "when": "!explorerResourceIsFolder && resourceScheme == file",
+          "group": "agentChat@1"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "opencode.addSelection",
+          "when": "editorIsOpen && resourceScheme == file"
+        },
+        {
+          "command": "opencode.addFile",
+          "when": "resourceScheme == file"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "opencode.view.focus",
+        "key": "ctrl+escape",
+        "mac": "cmd+escape"
+      },
+      {
+        "command": "opencode.addSelection",
+        "key": "ctrl+alt+k",
+        "mac": "cmd+alt+k",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Agent Chat",
+      "properties": {
+        "agentChat.binaryPath": {
+          "type": "string",
+          "default": "",
+          "scope": "machine",
+          "description": "Path to the agent server binary. Leave empty to use the one bundled with Niwala, falling back to `opencode` on PATH."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "gulp compile-extension:opencode",
+    "watch": "gulp watch-extension:opencode"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "24.x",
+    "@types/vscode-webview": "^1.57.0",
+    "@vscode/codicons": "^0.0.36"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anomalyco/opencode.git"
+  },
+  "dependencies": {
+    "markdown-it": "^14.2.0"
+  }
+}

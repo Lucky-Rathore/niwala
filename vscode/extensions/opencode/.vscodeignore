@@ -1,0 +1,8 @@
+src/**
+tsconfig*.json
+**/*.tsbuildinfo
+out/**
+esbuild*.mts
+.gitignore
+package-lock.json
+chat-src/**
